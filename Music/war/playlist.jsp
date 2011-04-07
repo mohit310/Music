@@ -4,9 +4,6 @@
 <%@page import="org.apache.commons.lang.StringEscapeUtils" %>
 <html>
 <head>
-<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-<META HTTP-EQUIV="EXPIRES" CONTENT="0">
-<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<script type="text/javascript" src="<%= request.getContextPath()%>/js/flowplayer-3.2.6.min.js"></script>
 
@@ -19,11 +16,18 @@
 </head>
 <body>
 	<div>
-		<div id="player" style="display:block;width:480px;height:30px;"></div>
+		<div id="player" style="display:block;width:480px;height:400px;"></div>
 		<script>
 			$f("player", "<%= request.getContextPath()%>/swf/flowplayer-3.2.7.swf", {
 
 				plugins: {
+					
+					content: {
+						url: '<%= request.getContextPath()%>/swf/flowplayer.content-3.2.0.swf',
+						backgroundColor:'#002200',
+						top:25, right: 25, width: 160, height: 100
+					},
+					
 					controls: {
 						fullscreen: false,
 						height: 30,
@@ -31,6 +35,21 @@
 						playlist: true,
 						loop: true
 					}
+				},
+				
+				clip: {
+					onStart: function(song) {
+			    		var meta = song.metaData;
+			    		
+			    		this.getPlugin("content").setHtml(
+			    			"<p>Artist: <b>" + meta.TPE1 + "</b></p>" +
+			    			"<p>Album:   <b>" + meta.TALB + "</b></p>" +
+			    			"<p>Title:   <b>" + meta.TIT2 + "</b></p>"
+			    		);					
+			    	},
+			    	
+			    	coverImage: { url: '<%= request.getContextPath()%>/images/background.jpg', scaling: 'orig' }
+					
 				},
 
 				playlist: [
