@@ -1,0 +1,3 @@
+# Module music
+# RPC service class, partial path of RPC policy file
+com.mk.music.client.MusicService, B8C25DCFD5978D6DCEB5D4EF8D8B105B.gwt.rpc

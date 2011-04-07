@@ -1,0 +1,2 @@
+serviceClass: com.mk.music.client.MusicService
+path: B8C25DCFD5978D6DCEB5D4EF8D8B105B.gwt.rpc

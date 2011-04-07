@@ -1,0 +1,138 @@
+/** Add css rules here for your application. */
+	/** Example rules used by the template application (remove for your app) */
+.headerLabel {
+	font-size: 1em;
+	font-weight: bold;
+	color: #777777;
+	margin: 20px 0px 10px;
+	text-align: left;
+}
+
+body {
+	width: 100%;
+}
+
+.navbutton {
+	height: 30px;
+}
+
+.streambutton {
+	height: 25px;
+	width: 25px;
+}
+
+.home {
+	height: 32px;
+	width: 32px;
+	border: 0;
+}
+
+.uparrow {
+	height: 32px;
+	width: 32px;
+	border: 0;
+}
+
+.waitimage {
+	height: 25px;
+	width: 25px;
+	border: 0;
+}
+
+.headerimage{
+	border: 0;	
+}
+
+.streamimage {
+	height: 25px;
+	width: 25px;
+	border: 0;
+}
+
+.noborder{
+	border: 0;
+}	
+
+.handcursor {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.defaultcursor {
+	cursor: auto;
+}
+
+.sendButton {
+	display: block;
+	font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+	width: 400px;
+}
+
+.dialogVPanel {
+	margin: 5px;
+}
+
+.serverResponseLabelError {
+	color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+	margin: 15px 6px 6px;
+}
+
+.musictable {
+	align: center;
+	width: 50%;
+	padding: 1px 1px 4px 4px;
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 1px;
+	border-style: solid solid solid solid;
+	border-color: black black black black;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+.mainpanel {
+	width: 100%;
+}
+
+.tableheader {
+	background-color: orange;
+}
+
+.tablecell {
+	background-color: white;
+}
+
+.textbox {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: normal;
+	height: 25px;
+	width: 300px;
+}
+
+.button-bold {
+	font-weight: bold;	
+}
+
+div#content_area {
+	width: 100%;
+	align: center;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.gwt-PushButton-margin {
+	margin-left: 5px;
+	padding-left: 5px;
+	margin-right: 5px;
+	padding-right: 5px;
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>Music.html</welcome-file>
+	</welcome-file-list>
+
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>musicServlet</servlet-name>
+		<servlet-class>com.mk.music.server.MusicServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>playlistServlet</servlet-name>
+		<servlet-class>com.mk.music.server.PlaylistServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>playServlet</servlet-name>
+		<servlet-class>com.mk.music.server.PlayServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>indexerServlet</servlet-name>
+		<servlet-class>com.mk.music.server.IndexerServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>refreshServlet</servlet-name>
+		<servlet-class>com.mk.music.server.RefreshServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>musicServlet</servlet-name>
+		<url-pattern>/music/musicService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>playlistServlet</servlet-name>
+		<url-pattern>/music/playlistService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>playServlet</servlet-name>
+		<url-pattern>/playService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>refreshServlet</servlet-name>
+		<url-pattern>/refresh</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>indexerServlet</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+
+</web-app>
