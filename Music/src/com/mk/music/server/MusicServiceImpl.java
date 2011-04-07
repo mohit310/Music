@@ -198,7 +198,7 @@ public class MusicServiceImpl extends RemoteServiceServlet implements
 			Searcher searcher = new IndexSearcher(reader);
 			Analyzer analyzer = new StandardAnalyzer();
 			MultiFieldQueryParser parser = new MultiFieldQueryParser(
-					new String[] { "path", "name" }, analyzer);
+					new String[] { "name" }, analyzer);
 			Query query = parser.parse(searchQuery + "*");
 			TopDocCollector collector = new TopDocCollector(10);
 			searcher.search(query, collector);

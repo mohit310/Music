@@ -9,7 +9,7 @@
 }
 
 body {
-	width: 100%;
+	width: 90%;
 }
 
 .navbutton {
@@ -124,7 +124,7 @@ body {
 }
 
 div#content_area {
-	width: 100%;
+	width: 700px;
 	align: center;
 	margin-left: 15px;
 	margin-right: 15px;
