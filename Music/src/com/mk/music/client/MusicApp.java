@@ -417,7 +417,7 @@ public class MusicApp implements EntryPoint {
 	private void getSessionPlayList() {
 		String baseURL = GWT.getModuleBaseURL();
 		String url = baseURL + "playlistService?isSession=true";
-		Window.open(url, "", "menubar=no,location=no,resizable=no,scrollbars=no,status=no,toolbar=false,width=500px,height=500px");
+		Window.open(url, "", "menubar=no,location=no,resizable=no,scrollbars=yes,status=no,toolbar=false,width=850px,height=700px");
 	}
 
 	private void getPlayList(String directory, String fileName) {
@@ -426,7 +426,7 @@ public class MusicApp implements EntryPoint {
 		if (fileName != null && fileName.trim().length() > 0) {
 			url += "&file=" + fileName;
 		}
-		Window.open(url, "", "menubar=no,location=no,resizable=no,scrollbars=no,status=no,toolbar=false,width=500px,height=500px");
+		Window.open(url, "", "menubar=no,location=no,resizable=no,scrollbars=yes,status=no,toolbar=false,width=850px,height=700px");
 	}
 	
 	private void addToPlaylist(String file){

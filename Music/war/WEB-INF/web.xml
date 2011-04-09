@@ -5,11 +5,6 @@
 
 <web-app>
 
-	<!-- Default page to serve -->
-	<welcome-file-list>
-		<welcome-file>Music.html</welcome-file>
-	</welcome-file-list>
-
 	<!-- Servlets -->
 	<servlet>
 		<servlet-name>musicServlet</servlet-name>
@@ -48,7 +43,7 @@
 
 	<servlet-mapping>
 		<servlet-name>playServlet</servlet-name>
-		<url-pattern>/playService</url-pattern>
+		<url-pattern>/playService/*</url-pattern>
 	</servlet-mapping>
 
 	<servlet-mapping>
@@ -60,5 +55,10 @@
 		<servlet-name>indexerServlet</servlet-name>
 		<url-pattern>/index</url-pattern>
 	</servlet-mapping>
+	
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>Music.html</welcome-file>
+	</welcome-file-list>
 
 </web-app>
